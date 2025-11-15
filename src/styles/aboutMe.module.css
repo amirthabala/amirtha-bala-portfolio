@@ -1,0 +1,14 @@
+@reference 'tailwindcss';
+
+.containerBg {
+  background-color: var(--bg-color-p4);
+}
+
+.containerWrapper {
+  border-bottom-left-radius: 120px;
+  @apply !pb-[80px] flex gap-[80px] bg-white;
+}
+
+.socialIconsBox {
+  @apply block w-[40px] h-[40px] flex items-center justify-center;
+}

@@ -1,0 +1,77 @@
+@reference 'tailwindcss';
+
+.wrapper {
+  background: radial-gradient(
+    75% 75% at 91.7% 6.8%,
+    var(--bg-color-p3) 0%,
+    var(--bg-color-p4) 100%
+  );
+  padding: 96px 0;
+  border-top-right-radius: 120px;
+}
+
+.educationContainer {
+  @apply w-full relative;
+}
+
+.educationContainer::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 200px;
+  background-color: var(--color-p2);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.educationItem {
+  width: calc(50% - 50px);
+  margin-right: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+  @apply shadow-md rounded-md py-5 px-8 h-[200px] flex items-center justify-end text-end cursor-pointer relative;
+}
+
+.educationContainer:nth-child(even) .educationItem {
+  margin-right: 0;
+  margin-left: 50px;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.educationItem:hover {
+  transform: scale(1.03);
+}
+
+.educationCard {
+  @apply flex items-center justify-start;
+}
+
+.educationContainer:nth-child(even) .educationCard {
+  justify-content: flex-end;
+}
+
+.educationCard::before {
+  content: "";
+  width: 1px;
+  height: 25px;
+  background-color: var(--color-p2);
+  position: absolute;
+  left: 48%;
+  transform: rotate(90deg) translateX(-48%);
+}
+
+.educationContainer:nth-child(even) .educationCard::before {
+  left: 52%;
+  transform: rotate(90deg) translateX(-52%);
+}
+
+.educationTime {
+  color: var(--color-p1);
+  @apply mb-3 text-xs font-bold flex items-center justify-between;
+}
+
+.educationContainer:nth-child(odd) .educationTime {
+  flex-direction: row-reverse;
+}

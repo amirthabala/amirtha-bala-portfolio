@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+:root {
+  --color-p1: #9f56c7;
+  --color-p2: #401952;
+  --color-p3: #52525b;
+  --bg-color-p1: #be87dd;
+  --bg-color-p2: #f4f4f5;
+  --bg-color-p3: #be87de99;
+  --bg-color-p4: #f5ecfb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  word-break: break-word;
+  @apply bg-white text-base;
+}
+
+.text-primary {
+  color: var(--color-p1);
+}
+
+.text-secondary {
+  color: var(--color-p2);
+}
+
+.text-ternary {
+  color: var(--color-p3);
+}
+
+.bg-primary {
+  background-color: var(--bg-color-p1);
+}
+
+.bg-secondary {
+  background-color: var(--bg-color-p2);
+}
+
+.bg-secondary-dark {
+  background-color: var(--color-p2);
+}
+
+.btn {
+  @apply rounded-3xl px-5 py-2 cursor-pointer;
+}
+
+.btn-primary {
+  border: 1px solid var(--color-p1);
+  color: var(--color-p1);
+}
+
+.btn-primary:hover {
+  border-color: var(--bg-color-p1);
+  background-color: var(--bg-color-p1);
+  color: white;
+}
+
+.container {
+  @apply px-[12%] py-[20px] max-w-full;
+}
+
+.heading {
+  color: var(--color-p2);
+  @apply text-6xl font-bold mb-[80px];
+}
+
+.sprite {
+  background-image: url("/icons-sprite.png");
+  background-size: 560px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.sprite.location-pin {
+  background-position: -25px -13px;
+  width: 23px;
+  height: 21px;
+  cursor: auto;
+}
+
+.sprite.location-pin.small {
+  scale: 0.6;
+}
+
+.sprite.social-icons {
+  width: 40px;
+  height: 40px;
+  background-size: 1048px;
+}
+
+.sprite.skills {
+  width: 40px;
+  height: 40px;
+  background-size: 1100px;
+  cursor: auto;
+}
+
+.sprite.linkedin {
+  background-position: -96px -27px;
+  scale: 0.9;
+}
+
+.sprite.linkedin:hover {
+  background-position: -509px -28px;
+  scale: 0.9;
+}
+
+.sprite.github {
+  background-position: -150px -30px;
+}
+
+.sprite.github:hover {
+  background-position: -558px -25px;
+}
+
+.sprite.mail {
+  background-position: -309px -28px;
+  scale: 0.98;
+}
+
+.sprite.mail:hover {
+  background-position: -721px -27px;
+  scale: 0.98;
+}
+
+.sprite.phone {
+  background-position: -360px -27px;
+}
+
+.sprite.phone:hover {
+  background-position: -772px -26px;
+}
+
+.sprite.facebook {
+  background-position: -259px -28px;
+  scale: 0.95;
+}
+
+.sprite.facebook:hover {
+  background-position: -667px -25px;
+  scale: 0.95;
+}
+
+.sprite.instagram {
+  background-position: -206px -29px;
+  scale: 0.95;
+}
+
+.sprite.instagram:hover {
+  background-position: -612px -27px;
+}
+
+.sprite.cell {
+  background-position: -217px -14px;
+  filter: invert(1);
+}
+
+.sprite.email {
+  background-position: -242px -14px;
+  filter: invert(1);
+  scale: 1.2;
+}
+
+.sprite.python {
+  background-position: -49px -93px;
+}
+
+.sprite.react {
+  background-position: -101px -94px;
+}
+
+.sprite.llm {
+  background-position: -160px -95px;
+}
+
+.sprite.langchain {
+  background-position: -218px -95px;
+}
+
+.sprite.ml {
+  background-position: -270px -94px;
+}
+
+.sprite.dl {
+  background-position: -319px -93px;
+}
+
+.sprite.nextjs {
+  background-position: -369px -93px;
+}
+
+.sprite.js {
+  background-position: -419px -93px;
+}
+
+.sprite.ts {
+  background-position: -468px -92px;
+}
+
+.sprite.nodejs {
+  background-position: -519px -92px;
+}
+
+.sprite.fastapi {
+  background-position: -569px -91px;
+}
+
+.sprite.redux {
+  background-position: -621px -95px;
+}
+
+.sprite.html {
+  background-position: -733px -94px;
+}
+
+.sprite.css {
+  background-position: -678px -94px;
+}
+
+.sprite.mysql {
+  background-position: -684px -81px;
+  background-size: 960px;
+}
+
+.sprite.graphql {
+  background-position: -842px -96px;
+}
+
+.sprite.git {
+  background-position: -850px -92px;
+  background-size: 1048px;
+}
+
+.sprite.mongodb {
+  background-position: -946px -94px;
+}

@@ -1,0 +1,7 @@
+.headerBody {
+  @apply w-full flex items-center justify-between transition-all duration-700;
+}
+
+.scrollBody {
+  @apply w-[40%] flex items-center justify-between transition-all duration-700;
+}

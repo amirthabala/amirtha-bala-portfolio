@@ -1,0 +1,10 @@
+@reference 'tailwindcss';
+
+.containerBg {
+  background-color: var(--color-p2);
+}
+
+.containerWrapper {
+  border-bottom-left-radius: 120px;
+  @apply !py-[96px] bg-white;
+}

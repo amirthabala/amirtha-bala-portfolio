@@ -1,0 +1,29 @@
+@reference 'tailwindcss';
+
+.grow {
+  height: 540px;
+}
+
+.grow .imgContainer {
+  @apply ps-[36%] pe-[12%] py-[20px] transition-all duration-400 origin-center ease-in-out fixed top-[80px] left-0 z-[1000];
+}
+
+.shrink {
+  height: 280px;
+}
+
+.shrink .imgContainer {
+  @apply px-0 py-[20px] transition-all duration-400 origin-center ease-in-out fixed top-0 left-[12%] z-[1000];
+}
+
+/* .shrink .imgContainer {
+  @apply top-0 left-[12%] px-0 py-[20px];
+} */
+
+.shrink img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
