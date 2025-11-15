@@ -6,8 +6,8 @@ const Hobbies = () => {
     <div className={style.containerBg}>
       <div className={`container ${style.containerWrapper}`}>
         <h2 className="heading text-center">Life Outside Work</h2>
-        <div className="flex gap-2 sm:gap-4">
-          <div className="w-1/2 flex-grow">
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <div className="w-full flex-grow sm:w-1/2">
             <Image
               src="/badminton.png"
               alt="badminton"
@@ -17,8 +17,8 @@ const Hobbies = () => {
               className="rounded-md aspect-592/600"
             />
           </div>
-          <div className="w-1/2 flex-grow flex flex-col gap-2 sm:gap-4">
-            <div className="flex gap-2 sm:gap-4">
+          <div className="w-full flex-grow flex flex-col gap-4 sm:w-1/2">
+            <div className="flex gap-4">
               <div className="flex-grow w-1/2">
                 <Image
                   src="/arts-n-crafts.png"
